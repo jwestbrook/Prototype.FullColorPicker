@@ -1,0 +1,18 @@
+div.picker_slider_container {
+  box-sizing:content-box !important;
+  -moz-box-sizing:content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+
+img.picker_slider_images{
+  max-width:none !important;
+  width:inherit !important;
+  height:inherit !important;
+  vertical-align:inherit !important;
+  border:none;
+}
+
+img.picker_sliders
+{
+	z-index: 1;
+}

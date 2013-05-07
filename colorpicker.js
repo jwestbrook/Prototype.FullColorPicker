@@ -68,10 +68,10 @@ FullColorPicker.ColorPicker = Class.create({
 			border: 'solid 1px #000'
 		});
 		
-		this._mapL1 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:256, height:256,'style':'margin:0px;display:block;'} ); //'blank.gif'});
+		this._mapL1 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:256, height:256,'style':'margin:0px;display:block;','class':'picker_slider_images'} ); //'blank.gif'});
 		this._mapBase.insert(this._mapL1);				
 	
-		this._mapL2 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:256, height:256,'style':'clear:both;margin:-256px 0px 0px 0px;display:block;'} ); //'blank.gif'});
+		this._mapL2 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:256, height:256,'style':'clear:both;margin:-256px 0px 0px 0px;display:block;','class':'picker_slider_images'} ); //'blank.gif'});
 		this._mapL2.setOpacity(.5);
 		this._mapBase.insert(this._mapL2);
 		
@@ -85,23 +85,23 @@ FullColorPicker.ColorPicker = Class.create({
 			border: 'solid 1px #000'
 		});
 		
-		this._barL1 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:0px;display:block;'});
+		this._barL1 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:0px;display:block;','class':'picker_slider_images'});
 		this._bar.insert(this._barL1);			
 
-		this._barL2 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:-256px 0px 0px 0px;display:block;'});
+		this._barL2 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:-256px 0px 0px 0px;display:block;','class':'picker_slider_images'});
 		this._bar.insert(this._barL2);
 		
-		this._barL3 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:-256px 0px 0px 0px;background-color:#f00;display:block;'} );
+		this._barL3 = new Element('img',{src:this.settings.clientFilesPath + 'blank.gif', width:20, height:256,'style':'margin:-256px 0px 0px 0px;background-color:#f00;display:block;','class':'picker_slider_images'} );
 		this._bar.insert(this._barL3);
 		
-		this._barL4 = new Element('img',{src:this.settings.clientFilesPath + 'bar-brightness.png', width:20, height:256,'style':'margin:-256px 0px 0px 0px;display:block;'} );
+		this._barL4 = new Element('img',{src:this.settings.clientFilesPath + 'bar-brightness.png', width:20, height:256,'style':'margin:-256px 0px 0px 0px;display:block;','class':'picker_slider_images'} );
 		this._bar.insert(this._barL4);				
 		
 		// attach map slider
-		this._map = new FullColorPicker.Slider(this._mapL2, {xMaxValue: 255, yMinValue: 255, arrowImage: this.settings.clientFilesPath + 'mappoint.gif'});
+		this._map = new FullColorPicker.Slider(this._mapL2, {xMaxValue: 255, yMinValue: 255, arrowImage: this.settings.clientFilesPath + 'mappoint.gif','class':'picker_slider_images'});
 
 		// attach color slider
-		this._slider = new FullColorPicker.Slider(this._barL4, {xMinValue: 1,xMaxValue: 1, yMinValue: 255, arrowImage: this.settings.clientFilesPath + 'rangearrows.gif'});;
+		this._slider = new FullColorPicker.Slider(this._barL4, {xMinValue: 1,xMaxValue: 1, yMinValue: 255, arrowImage: this.settings.clientFilesPath + 'rangearrows.gif','class':'picker_slider_images'});;
 
 		// attach color values
 		this._cvp = new FullColorPicker.ColorValuePicker(this.id);

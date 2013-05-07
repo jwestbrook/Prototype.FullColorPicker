@@ -35,7 +35,7 @@ FullColorPicker.Slider = Class.create({
 		this._bar = $(this.id);
 
 		// build controls
-		this._arrow = new Element('img',{'border':0,'src':this.settings.arrowImage,'margin':0,'padding':0,'style':'position:absolute;top:0px;left:0px;'});
+		this._arrow = new Element('img',{'border':0,'class':'picker_sliders','src':this.settings.arrowImage,'margin':0,'padding':0,'style':'position:absolute;top:0px;left:0px;'});
 
 		// attach 'this' to html objects
 		var slider = this;
